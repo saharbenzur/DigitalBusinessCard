@@ -19,13 +19,25 @@ img {
 h1, h2, p {
     text-align: center;
 }
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+.contact-title {
+    margin-top: 35px;
+}
 
 a {
     display: inline-block;
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 7px 14px;
+    font-size: 14px;
     background-color: #333;
     color: white;
     border-radius: 8px;
@@ -40,6 +52,11 @@ a {
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+    .card p {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
 
 @media (max-width: 600px) {
     body {
@@ -56,13 +73,35 @@ a {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
+label[for="theme-toggle"] {
+    display: inline-block;
+    padding: 7px 14px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.light-text {
+    display: none;
+}
+
+#theme-toggle:checked + .card .dark-text {
+    display: none;
+}
+
+#theme-toggle:checked + .card .light-text {
+    display: inline;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+    #theme-toggle:checked + .card {
+        background-color: #1e1e1e;
         color: white;
     }
-
-    .card {
-        background-color: #1e1e1e;
-    }
-}
