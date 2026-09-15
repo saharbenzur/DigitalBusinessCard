@@ -105,3 +105,75 @@ label[for="theme-toggle"] {
         background-color: #1e1e1e;
         color: white;
     }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #f8e9ec;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+    .skills span {
+        background-color: #b76e79;
+        color: white;
+        padding: 6px 11px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 12px;
+
+    }
+
+h1 {
+    color: #b76e79;
+}
+
+.projects {
+    margin: 20px 0 30px;
+    background-color: #f8e9ec;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+    .projects h3 {
+        color: #b76e79;
+        margin-bottom: 5px;
+    }
+
+    .projects p {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+.skills h2 {
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.contact {
+    background-color: #f8e9ec;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 12px;
+    
+}
+
+    .projects h2,
+    .contact h2 {
+        margin-top: 0;
+    }
+
+#theme-toggle:checked + .card .skills,
+#theme-toggle:checked + .card .projects,
+#theme-toggle:checked + .card .contact {
+    background-color: #5c343b;
+    color: white;
+}
+    #theme-toggle:checked + .card .projects h3 {
+        color: #f2b8c2;
+    }
